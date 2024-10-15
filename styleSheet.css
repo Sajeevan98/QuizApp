@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+
+}
+
+body{
+    background: linear-gradient(130deg, rgb(11, 2, 84), rgb(24, 10, 185));
+    height: auto;
+    min-height: 100vh;
+    
+}
+
+#app{
+    background: #fff;
+    width: 90%;
+    max-width: 580px;
+    margin: 10% auto 0px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#app h2{
+    font-weight: 600;
+    color: rgb(22, 4, 216);
+    font-size: 28px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 8px;
+}
+
+.quiz h3{
+    font-size: 22px;
+    color: rgb(11, 2, 84);
+    font-weight: 600;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#answerBtn .btn{
+    width: 100%;
+    background: #fff;
+    color: rgb(98, 96, 96);
+    border: 1px solid rgb(11, 2, 84);
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: left;
+    transition: all 0.3s;
+}
+
+#answerBtn .btn:hover:not([disabled]){
+    background: rgb(98, 96, 96);
+    color: #fff;
+}
+
+#answerBtn .btn:disabled{
+    cursor: no-drop;
+}
+
+.nextBtn{
+    background: rgb(11, 2, 84);
+    color: #fff;
+    width: 160px;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    margin: 20px auto 0px;
+    display: none;          /* display: block; */
+}
+
+#answerBtn .correct{
+    background: rgb(87, 238, 99);
+    color: #fff;
+    border: 0;
+}
+
+#answerBtn .incorrect{
+    background: rgb(237, 61, 82);
+    color: #fff;
+    border: 0;
+}
